@@ -4,7 +4,7 @@
  *		- Examined a simple class with 'instance' data-members, a constructor, accessors, mutators.
  *
  *	@author		<Ben Cecutti>
- *	@studentID  <YOUR STUDENT ID>
+ *	@studentID  <100754039>
 */
 
 #include <iostream> 		// cin, cout
@@ -52,7 +52,8 @@ int main()
 
 		// Processing
 		// determine the distance between the two points
-		distance = origin.GetDistanceTo(destination);
+		//distance = origin.GetDistanceTo(destination);
+		distance = origin - destination;
 
 		// Output 
 		// Show the points and the distance

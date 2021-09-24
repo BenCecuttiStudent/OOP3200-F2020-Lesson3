@@ -22,7 +22,7 @@ int main()
 {
 	// Declarations
 	// a point called 'origin', initialized to 0, 0
-	CartesianPoint origin = CartesianPoint(10, 20);
+	CartesianPoint origin = CartesianPoint(0, 0);
 	
 	// a point called 'destination'
 	CartesianPoint destination;
@@ -64,9 +64,16 @@ int main()
 		// Output 
 		// Show the points and the distance
 		cout << fixed << setprecision(3); // formatting
-		cout << "\nThe Distance between " << origin.ToString()
-			<< " and " << destination.ToString() << " is "
+		cout << "\nThe Distance between " << origin
+			<< " and " << destination << " is "
 			<< distance << ". " << endl;
+
+		CartesianPoint anotherPoint;
+
+		std::cout << "\nEnter another point: ";
+		std::cin >> anotherPoint;
+
+		std::cout << "You Entered: " << anotherPoint << std::endl;
 	}
 
 	catch (exception& ex)
